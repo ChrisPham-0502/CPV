@@ -1,5 +1,6 @@
 import cv2
 
+# Tạo hàm thay đổi tham số trong từng kênh màu của ảnh
 def change_channel(x, channel):
     for i in range(len(channel)):
         channel[i] = (channel[i]+x)//2
@@ -10,7 +11,7 @@ def nothing(x):
 
 title_window = "Result"
 cv2.namedWindow(title_window)
-
+# Tạo trackbar (thanh trượt)
 cv2.createTrackbar("B", title_window, 0, 255, nothing)      # Tạo trackbar với kênh màu Blue
 cv2.createTrackbar("G", title_window, 0, 255, nothing)      # Tạo trackbar với kênh màu Green
 cv2.createTrackbar("R", title_window, 0, 255, nothing)      # Tạo trackbar với kênh màu Red
