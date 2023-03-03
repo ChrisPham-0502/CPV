@@ -11,14 +11,12 @@ def nothing(x):
 title_window = "Result"
 cv2.namedWindow(title_window)
 
-img = cv2.imread("messi5.jpg")
-b,g,r = cv2.split(img)
 cv2.createTrackbar("B", title_window, 0, 255, nothing)      # Tạo trackbar với kênh màu Blue
 cv2.createTrackbar("G", title_window, 0, 255, nothing)      # Tạo trackbar với kênh màu Green
 cv2.createTrackbar("R", title_window, 0, 255, nothing)      # Tạo trackbar với kênh màu Red
 
 while(1):
-    img = cv2.imread("messi5.jpg")
+    img = cv2.imread("image.jpg")
     B,G,R = cv2.split(img)
 
     k = cv2.waitKey(1) & 0xFF
