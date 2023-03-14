@@ -17,7 +17,7 @@ cv2.createTrackbar("G", title_window, 0, 255, nothing)      # Tạo trackbar v�
 cv2.createTrackbar("R", title_window, 0, 255, nothing)      # Tạo trackbar với kênh màu Red
 
 while(1):
-    img = cv2.imread("image.jpg")
+    img = cv2.imread("image.jpg")   # Đưa path hình ảnh vào
     B,G,R = cv2.split(img)
 
     k = cv2.waitKey(1) & 0xFF
