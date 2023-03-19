@@ -1,3 +1,5 @@
+# Code này sẽ giúp các bạn làm quen với việc tương tác với từng kênh màu trong nhóm RGB (3 màu cơ bản trong ảnh).
+
 import cv2
 
 # Tạo hàm thay đổi tham số trong từng kênh màu của ảnh
